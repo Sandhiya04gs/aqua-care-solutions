@@ -1,6 +1,3 @@
-
-/* Genuine Google customer reviews - Aqua Care Solutions */
-
 export const googleLinks = {
   all: "https://maps.app.goo.gl/nH6aHxQeRGCTxy487",
   write: "",

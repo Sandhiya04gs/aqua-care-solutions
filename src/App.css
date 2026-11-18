@@ -2201,3 +2201,149 @@ ul {
   mix-blend-mode: multiply;
   padding: 10px;
 }
+
+/* Professional Contact Form */
+
+.form__heading {
+  margin-bottom: 24px;
+}
+
+.form__heading h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.form__heading p {
+  color: #687985;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form .field {
+  margin-bottom: 20px;
+}
+
+.form .field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #202b35;
+}
+
+.required {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.form .field input,
+.form .field select,
+.form .field textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d5e1e7;
+  border-radius: 9px;
+  background: #fff;
+  color: #202b35;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form .field input:focus,
+.form .field select:focus,
+.form .field textarea:focus {
+  border-color: #087eae;
+  box-shadow: 0 0 0 3px rgba(8, 126, 174, 0.12);
+}
+
+.form .field input::placeholder,
+.form .field textarea::placeholder {
+  color: #a0acb5;
+}
+
+.form .field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form .field--invalid input,
+.form .field--invalid select,
+.form .field--invalid textarea {
+  border-color: #dc3545;
+}
+
+.form .field__error {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 7px;
+  color: #dc3545;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form__note {
+  margin-top: 15px;
+  color: #687985;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .form__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* Required field indicator */
+.required {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+/* Form heading */
+.form__heading {
+  margin-bottom: 22px;
+}
+
+.form__heading h3 {
+  margin-bottom: 8px;
+}
+
+/* Invalid field */
+.form .field--invalid input,
+.form .field--invalid select,
+.form .field--invalid textarea {
+  border-color: #dc3545;
+  background-color: #fffafa;
+}
+
+/* Focus state */
+.form .field input:focus,
+.form .field select:focus,
+.form .field textarea:focus {
+  outline: none;
+  border-color: #087eae;
+  box-shadow: 0 0 0 3px rgba(8, 126, 174, 0.12);
+}
+
+/* Error message */
+.form .field__error {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 7px;
+  color: #dc3545;
+  font-size: 12px;
+  line-height: 1.5;
+}
